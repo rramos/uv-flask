@@ -18,7 +18,6 @@ ENV PATH="/app/.venv/bin:$PATH"
 # Reset the entrypoint, don't invoke `uv`
 ENTRYPOINT []
 
-# Run the FastAPI application by default
-# Uses `fastapi dev` to enable hot-reloading when the `watch` sync occurs
+# Run the Flask application by default
 # Uses `--host 0.0.0.0` to allow access from outside the container
 CMD ["flask", "run","--host=0.0.0.0"]
